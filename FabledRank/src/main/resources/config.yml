@@ -1,0 +1,20 @@
+# Discord: https://discord.gg/ZfChxuwbfW
+# You can set it here according to your country language, for now only TR / EN
+locale: TR
+# Write the first rank that the players start, briefly the fixed rank, here (Make sure you write it properly!)
+default-rank: "Default"
+group-reset-event: "manuadd %fabledrank_player% Defualt world"
+
+Groups:
+  #Test:
+    #level: 30
+    #run-command: "!fabledranktest" To rank up, he needs to type "!fabledranktest" in the chat
+    #group-name: "Test" Enter the name of the rank that will jump to that rank
+    #rank-name: "Test" Enter rank name (Important)
+    #rank-up-command: "manuadd %fabledrank_player% Test world" Ranking code, you can edit commands (Important)
+  Test:
+    level: 10
+    run-command: "!fabledranktest"
+    group-name: "Test"
+    rank-name: "Test"
+    rank-up-command: "manuadd %fabledrank_player% Test world"
