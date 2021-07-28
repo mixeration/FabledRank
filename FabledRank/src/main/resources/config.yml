@@ -2,19 +2,29 @@
 # You can set it here according to your country language, for now only TR / EN
 locale: TR
 # Write the first rank that the players start, briefly the fixed rank, here (Make sure you write it properly!)
-default-rank: "Default"
-group-reset-event: "manuadd %fabledrank_player% Defualt world"
+default-rank: "default"
+group-reset-event:
+  - "manuadd %fabledrank_player% defualt world"
 
 Groups:
   #Test:
+    #type: point,level,both
+    #if you turn it Level, you need to add level:
     #level: 30
+    # if you turn it Point, you need to add point:
+    #point: 100.0
+    # if you turn it Both, you need to add point,level:
+    #point: 100.0
+    #level: 10
     #run-command: "!fabledranktest" To rank up, he needs to type "!fabledranktest" in the chat
     #group-name: "Test" Enter the name of the rank that will jump to that rank
     #rank-name: "Test" Enter rank name (Important)
     #rank-up-command: "manuadd %fabledrank_player% Test world" Ranking code, you can edit commands (Important)
   Test:
+    type: level
     level: 10
     run-command: "!fabledranktest"
     group-name: "Test"
     rank-name: "Test"
-    rank-up-command: "manuadd %fabledrank_player% Test world"
+    rank-up-command:
+      - "manuadd %fabledrank_player% Test world"

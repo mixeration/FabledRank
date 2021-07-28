@@ -19,6 +19,7 @@ import java.io.IOException;
 
 public final class FabledRank extends JavaPlugin {
 
+
     private static Permission perms = null;
 
     public File TAGFMm;
@@ -94,32 +95,32 @@ public final class FabledRank extends JavaPlugin {
     public void setupVaultAndFabledSkyBlock() {
         if (Bukkit.getPluginManager().getPlugin("Vault") == null) {
             if(getConfig().getString("locale").equals("EN")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Vault can not found, plugin closed %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Vault can not found, plugin closed."));
                 Bukkit.getPluginManager().disablePlugin(this);
             } else if(getConfig().getString("locale").equals("TR")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Vault bulunamadi, eklenti kapatiliyor %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Vault bulunamadi, eklenti kapatiliyor."));
                 Bukkit.getPluginManager().disablePlugin(this);
             }
         } else {
             if(getConfig().getString("locale").equals("EN")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Vault found %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Vault found."));
             } else if(getConfig().getString("locale").equals("TR")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Vault bulundu %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Vault bulundu."));
             }
         }
         if (Bukkit.getPluginManager().getPlugin("FabledSkyBlock") == null) {
             if(getConfig().getString("locale").equals("EN")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Fabled skyblock can not found, plugin closed %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Fabled skyblock can not found, plugin closed."));
                 Bukkit.getPluginManager().disablePlugin(this);
             } else if(getConfig().getString("locale").equals("TR")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Fabled skyblock bulunamadi, eklenti kapatiliyor %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Fabled skyblock bulunamadi, eklenti kapatiliyor."));
                 Bukkit.getPluginManager().disablePlugin(this);
             }
         } else {
             if (getConfig().getString("locale").equals("EN")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Fabled skyblock found %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Fabled skyblock found."));
             } else if (getConfig().getString("locale").equals("TR")) {
-                Bukkit.getConsoleSender().sendMessage(String.format("[%s] Fabled skyblock bulundu %s."));
+                Bukkit.getConsoleSender().sendMessage(String.format("Fabled skyblock bulundu."));
             }
         }
         setupPermissions();
